@@ -7,5 +7,5 @@ url: "http://mikeborsare.com"
 
 # Build settings
 markdown: kramdown
-permalink: pretty 
-sass_dir: stylesheets
+permalink: pretty
+sass_dir: _stylesheets
