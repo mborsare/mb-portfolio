@@ -1,0 +1,52 @@
+---
+---
+
+// The two lines of triple dashes above let Jekyll know this is a Sass file
+// Now, let's start the stylesheet below
+
+/* Importing Bourbon et al. */
+// foo
+@import "bourbon/bourbon";
+@import "variables";
+@import "neat/neat";
+@import "normalize";
+
+/* Base */
+/* ----------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+}
+
+html, body { 
+	height: 100%; 
+	background-color: alicewhite;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  //background-color: #fdfdfd;
+}
+
+.site-header {
+	
+}
+
+.site-footer {
+	
+}
+
+.wrap {
+	@include outer-container;	
+}
+
+
+.page-content {
+	
+}
+
