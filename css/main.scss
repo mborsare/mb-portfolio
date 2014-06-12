@@ -37,8 +37,21 @@ body {
 	
 }
 
+
 .site-footer {
-	
+	@include outer-container;
+	h3 {
+		text-transform: uppercase;
+	}
+}
+
+.site-footer-left {
+	@include span-columns (8);
+}
+
+.site-footer-right {
+	@include span-columns (4);
+	@include omega ();
 }
 
 .wrap {

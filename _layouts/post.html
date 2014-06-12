@@ -1,7 +1,14 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  {% include _head.html %}
-  <body>
-    {{ content }}
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+{% include _head.html %}
+
+<body>
+	<div class="page-content">
+		<div class="wrap">
+			<h1> {{ page.title }} </h1>
+				{{ content }}
+		</div>
+	</div>
+</body>
+
 </html>
