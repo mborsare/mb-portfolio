@@ -11,55 +11,7 @@
 @import "neat/neat";
 @import "normalize";
 
-/* Base */
-/* ----------------------------------------------------------*/
-
-* {
-  box-sizing: border-box;
-	margin: 0;
-  padding: 0;
-}
-
-html, body { 
-	height: 100%; 
-	background-color: alicewhite;
-}
-
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 300;
-  //background-color: #fdfdfd;
-}
-
-.site-header {
-	
-}
-
-
-.site-footer {
-	@include outer-container;
-	h3 {
-		text-transform: uppercase;
-	}
-}
-
-.site-footer-left {
-	@include span-columns (8);
-}
-
-.site-footer-right {
-	@include span-columns (4);
-	@include omega ();
-}
-
-.wrap {
-	@include outer-container;	
-}
-
-
-.page-content {
-	
-}
-
+@import "layout";
+@import "home";
+@import "header";
+@import "footer";

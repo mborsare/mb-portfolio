@@ -1,0 +1,44 @@
+/* Description... */
+/* ----------------------------------------------------------*/
+
+
+.home-intro {
+	@include outer-container;
+	//background-color: red;
+	color: $yellow;
+	max-width: 75%;
+	margin-bottom: $vertical-margin;
+	padding-bottom: $vertical-margin;
+	text-align: center;
+	
+	h1 {
+		color: $white;
+		font-size: em(60);
+	}
+
+	header {
+		background-image: none;
+		margin-bottom: $vertical-margin*4;
+
+		p {
+			font-size: em(20)
+		}
+	}
+
+	footer {
+		margin: 0;
+		color: $white;
+
+		&:after {
+			content: "↓";
+		}
+	}
+}
+
+.posts {
+	@include outer-container;
+	li {
+		@include span-columns(4);
+	  @include omega(3n);
+	}
+}
