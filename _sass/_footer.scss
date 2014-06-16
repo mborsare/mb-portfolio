@@ -1,64 +1,61 @@
-/* Description... */
-/* ----------------------------------------------------------*/
 
-
-.site-footer {
-	@include outer-container;
-	background-color: $white;
-	margin-top: $vertical-margin;
-	padding-bottom: $vertical-margin*4;
-	padding-top: $vertical-padding;
-
-	h3 {
-		font-size: em(14);
-		letter-spacing: em(1);
-		margin-bottom: em(14); 
-		text-transform: uppercase;
-	}
-
-	p {
-		color: $slate;
-		
-		&.copyright {
-			font-size: em(14);	
-			margin-top: em(100);
-		}
-	}
+footer {
+  background-color: $white;
+  max-width: 100%;
 }
 
-.site-footer-left {
-	@include span-columns (9);
+.main-footer-inner {
+  @include outer-container;
+  background-color: $white;
+  margin-top: $vertical-margin;
+  padding-bottom: $vertical-margin*4;
+  padding-top: $vertical-padding;
+
+  h3 {
+    font-size: em(14);
+    letter-spacing: em(1);
+    margin-bottom: em(14); 
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $slate;
+    
+    &.copyright {
+      font-size: em(14);  
+      margin-top: em(100);
+    }
+  }
 }
 
-.site-footer-right {
-	@include span-columns (3);
-	@include omega ();
+.colophon {
+  @include span-columns (9);
+}
 
-	i {
-		margin-right: em(16);
-	}
+.contact {
+  @include span-columns (3);
+  @include omega ();
+
+  a { 
+    text-decoration: none; 
+    color: inherit;
+  }
+
+  i {
+    margin-right: em(16);
+  }
      
-	ul {
-		list-style-type: none;
-		line-height: em(32);
-		
-		li {
-			$icons: email $email-color, twitter $twitter-color, dribbble $dribbble-color, linkedin $linkedin-color;
-			@each $icon in $icons {
-				&.#{nth($icon, 1)}  {
-					color: nth($icon, 2);
-				}
-			}
-
-		a { 
-				text-decoration: none; 
-				color: inherit; 
-			}
-		}
-	}
-}
-
-.wrap-full-footer {
-	background-color: $white;
-	max-width: 100%;
+  ul {
+    list-style-type: none;
+    line-height: em(32);
+    
+    li {
+      $icons: email $email-color, twitter $twitter-color, dribbble $dribbble-color, linkedin $linkedin-color;
+      @each $icon in $icons {
+        &.#{nth($icon, 1)}  {
+          color: nth($icon, 2);
+        }
+      }
+    }
+  }
 }
