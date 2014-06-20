@@ -12,7 +12,9 @@
 
 
 // breaking down styles on a per page basis for easier changes and more consistency
-@import "layout";
-@import "home";
 @import "header";
+@import "project";
+@import "layout";
+@import "introduction";
+@import "home";
 @import "footer";

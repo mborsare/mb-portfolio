@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title:  "Welcome to Jekyll!"
 date:   2014-06-10 16:25:11
 categories: jekyll update

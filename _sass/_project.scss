@@ -1,0 +1,70 @@
+header.main {
+  @include background-image(linear-gradient(-118deg, #2377AE 6%, #53A0FD 51%, #8DCE96 80%, #B4EC51 100%));
+}
+
+.page-content {
+  background-color: white;
+
+  .inner-content {
+    padding-top: em(90);
+    margin-top: em(95);
+    background-color: white;
+  }
+}
+
+section {
+
+  .project-roles {
+    font-size: em(14);
+    display: inline-block;
+    margin-top: $vertical-padding/3;
+    margin-bottom: $vertical-padding;
+
+    strong {
+      color: $orange;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: em(20);
+    }
+  }
+
+  p {
+    font-size: $base-font-size*1.4;
+  }
+
+  &.project-introduction {
+    @include outer-container;
+
+    footer {
+      background-color: inherit;
+      margin-top: $vertical-padding*3;
+      padding-bottom: $vertical-padding/2;
+
+      p {
+      font-size: em(14);
+      color: $headings;
+      }
+
+      &:after {
+        content: "↓";
+        color: $headings;
+      }
+    }
+  }
+
+  &.project-images {
+    background-color: #003D61;
+    padding-top: $vertical-padding;
+
+    footer {
+      font-size: em(14);
+      padding: $vertical-padding;
+
+      a.home-target {
+        color: $orange;
+      }
+    }
+  }
+}
