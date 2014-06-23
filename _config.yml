@@ -8,4 +8,5 @@ url: "http://mikeborsare.com"
 # Build settings
 markdown: kramdown
 permalink: pretty
-sass_dir: _stylesheets
+
+sass_dir: _sass

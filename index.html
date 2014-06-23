@@ -1,20 +1,51 @@
 ---
 layout: default
 ---
-
 <div class="home">
+  <section class="home-intro">
+    <div class="home-intro-inner">
+      <header>
+        <h1>Hi there.</h1>
+        <p>I’m Mike – a MassArt educated graphic designer living and working in Boston MA. It’s cold here (I’m from Tennessee by way of Alabama).</p>
+      </header>
+      <footer>
+        <h4>Check out some of my work.</h4>
+      </footer>
+    </section>
+  </div> <!-- end .home-intro-inner -->
 
   <h1>Posts</h1>
-
   <ul class="posts">
     {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
+    <li>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+    <li>
+      <a href="#" title=""><img src="http://placehold.it/350x350" alt=""></a>
+    </li>
+    <li>
+      <a href="#" title=""><img src="http://placehold.it/350x350" alt=""></a>
+    </li>
+    <li>
+      <a href="#" title=""><img src="http://placehold.it/350x350" alt=""></a>
+    </li>
+    <li>
+      <a href="#" title=""><img src="http://placehold.it/350x350" alt=""></a>
+    </li>
+    <li>
+      <a href="#" title=""><img src="http://placehold.it/350x350" alt=""></a>
+    </li>
+    <li>
+      <a href="#" title=""><img src="http://placehold.it/350x350" alt=""></a>
+    </li>
+    <li>
+      <a href="#" title=""><img src="http://placehold.it/350x350" alt=""></a>
+    </li>
+    <li>
+      <a href="#" title=""><img src="http://placehold.it/350x350" alt=""></a>
+    </li>
     {% endfor %}
   </ul>
-
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
