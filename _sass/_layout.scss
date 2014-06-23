@@ -7,8 +7,9 @@
 
 html, body {
   height: 100%;
-  background-color: $neutral;
+  background-color: $white;
   color: $black;
+  transition: width 0.3s ease;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 .inner-content {
   //@include outer-container;
   text-align: center;
-  margin-top: $vertical-margin*8;
+  //margin-top: $vertical-margin*8;
   margin-bottom: $vertical-margin*5;
 }
 

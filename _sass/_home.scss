@@ -1,20 +1,27 @@
-main.header {
-    background-image: none;
-    background-color: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+.home {
 
-.page-content {
-  background-color: $neutral;
-}
+  header {
+    &.main {
+      background-image: none;
+      background-color: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 
-.posts {
-  @include outer-container;
+  .inner-content {
+    background-color: $neutral;
+    margin: 0;
+    padding: $vertical-padding 0;
+  }
 
-  li {
-    @include span-columns(4);
-    @include omega(3n);
+  .posts {
+    @include outer-container;
+
+    li {
+      @include span-columns(4);
+      @include omega(3n);
+    }
   }
 }
