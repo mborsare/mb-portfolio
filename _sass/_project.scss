@@ -8,6 +8,7 @@ header.main {
   .inner-content {
     padding-top: em(90);
     margin-top: em(95);
+    margin-bottom: 0;
     background-color: white;
   }
 }
@@ -59,10 +60,31 @@ section {
     padding-top: $vertical-padding;
 
     footer {
+      background-color: $neutral;
       font-size: em(14);
-      padding: $vertical-padding;
+      padding: $vertical-padding 0;
+      padding-bottom: em(70);
 
-      a.home-target {
+      .prev-project-target {
+        @include span-columns(4);
+        color: $email-color;
+
+        &:before {
+          content: "← ";
+        }
+      }
+
+      .next-project-target {
+        @include span-columns(4);
+        color: $headings;
+
+        &:after {
+          content: " →"
+        }
+      }
+
+      .home-target {
+        @include span-columns(4);
         color: $orange;
       }
     }
