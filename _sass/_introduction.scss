@@ -1,0 +1,40 @@
+.home-intro {
+  color: $yellow;
+  width: 100%;
+  padding-bottom: $vertical-margin;
+  padding-top: $vertical-margin*7;
+  text-align: center;
+
+  h1 {
+    color: $white;
+    font-size: em(60);
+  }
+
+  h4 {
+    color: $white;
+    font-size: em(14);
+  }
+
+  header {
+    background-image: none;
+    margin-bottom: $vertical-margin*4;
+
+    p {
+      font-size: em(20)
+    }
+  }
+
+ .home-intro-calltoaction {
+    background-color: inherit;
+    margin: 0;
+
+    &:after {
+      content: "↓";
+    }
+  }
+}
+
+.home-intro-inner {
+  @include outer-container;
+  width: 60%;
+}

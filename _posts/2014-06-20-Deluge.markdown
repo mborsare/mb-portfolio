@@ -1,0 +1,9 @@
+---
+layout: project
+title:  "Deluge"
+date:   2014-06-20 16:25:11
+categories: [Print, Branding]
+thumbnail: /assets/images/Deluge.jpg
+---
+
+Deluge is an autobiographical tale of a young woman’s confrontation and conquering of aquaphobia (fear of water). This book jacket expresses the anxiety felt by the tale’s main character via bold geometric shapes mimicking a downpour. The color palette was born from the vibrant colors of rain gear.
