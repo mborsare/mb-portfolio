@@ -2,8 +2,7 @@
 
   header {
     &.main {
-      background-image: none;
-      background-color: none;
+      background: none;
       position: absolute;
       top: 0;
       left: 0;
@@ -17,8 +16,18 @@
   }
 
   .posts {
+    $border-radius: 3px;
     @include outer-container;
- 
+
+    a {
+      display: block;
+
+      img {
+        border-radius: $border-radius;
+        display: block;
+      }
+    }
+
     .post {
       @include span-columns(4);
       @include omega(3n);
@@ -28,16 +37,19 @@
 
     .post-details {
       font-size: em(20);
+      color: $white;
       opacity: 0;
       transition: opacity .2s ease;
-      top: 50%;
-      margin-top: -25px;
+      top: 0;
+      padding-top: 45%;
       position: absolute;
       height: 100%;
       width: 100%;
 
       &:hover {
         opacity: 1;
+        background: RGBA(44, 161, 236, .92);
+        border-radius: $border-radius;
       }
 
       &:after {
