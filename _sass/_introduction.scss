@@ -2,25 +2,43 @@
   color: $yellow;
   width: 100%;
   padding-bottom: $vertical-margin;
-  padding-top: $vertical-margin*7;
+  padding-top: $vertical-margin*6;
   text-align: center;
 
   h1 {
     color: $white;
     font-size: em(60);
+    line-height: 1;
+    margin-bottom: $vertical-margin/4;
+
+    @include media($medium-screen-down) {
+      font-size: em(40);
+    }
   }
 
   h4 {
     color: $white;
     font-size: em(14);
+
+    @include media($medium-screen-down) {
+      font-size: em(12);
+    }
   }
 
   header {
     background-image: none;
-    margin-bottom: $vertical-margin*4;
+    margin-bottom: $vertical-margin*3;
+
+    @include media($medium-screen-down) {
+      margin-bottom: $vertical-margin*2;
+    }
 
     p {
-      font-size: em(20)
+      font-size: em(20);
+
+      @include media($medium-screen-down) {
+        font-size: em(16);
+      }
     }
   }
 
