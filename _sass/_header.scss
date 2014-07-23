@@ -1,7 +1,7 @@
 header {
   width: 100%;
-  @include background-image(linear-gradient(-118deg, #2377AE 6%, #53A0FD 51%, #8DCE96 80%, #B4EC51 100%));
-  padding-bottom: $vertical-margin/2;
+  @include background-image($brand-gradient);
+  padding-bottom: $vertical-margin/4;
 }
 
 .project {
@@ -16,13 +16,31 @@ header {
   position: relative;
   z-index: 1;
 
+  @include media($xlarge-screen-down) {
+    @include pad(default default);
+  }
+
+  .logo {
+    @include span-columns(9);
+
+    @include media($medium-screen-down) {
+      @include span-columns(3);
+    }
+  }
+
   nav {
     @include span-columns (3);
     margin-top: em(20);
+
+    @include media($medium-screen-down) {
+      @include span-columns(9);
+      margin-top: 0;
+      line-height: 300%;
+    }
   }
 
   ul {
-    float: left;
+    float: right;
     list-style-type: none;
 
     a {
@@ -38,24 +56,20 @@ header {
 
     li {
       display: inline-block;
-
-      &:nth-child(1){
-        margin-right: 1em;
-      }
+      margin-right: 1em;
     }
   }
 }
-
-.logo {
-  @include span-columns (9);
-}
-
 
 #site-logo {
   background-image: url(/assets/m-animate2-static.png);
   @include size(em(60)); //when one value is passed with this mixin it's used for both height and width
   background-size: contain;
   display: inline-block;
+
+  @include media($medium-screen-down) {
+    @include size(em(45)); //when one value is passed with this mixin it's used for both height and width
+  }
 
   &:before {
     background-image: url(/assets/m-animate2.gif);

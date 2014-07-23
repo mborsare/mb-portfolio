@@ -1,0 +1,104 @@
+.contact-page {
+  header {
+    &.main {
+      background: transparent;
+    }
+  }
+
+  .contact-intro {
+    @include outer-container;
+    margin-bottom: $vertical-margin;
+    width: 50%;
+  }
+
+  h1 {
+    color: $white;
+    margin-bottom: $vertical-margin/4;
+
+    @include media($medium-screen-down) {
+      font-size: em(40);
+      margin-bottom: .375em;
+    }
+  }
+
+  p {
+    color: $yellow;
+    font-size: em(20);
+
+    @include media($medium-screen-down) {
+      font-size: em(16);
+    }
+  }
+
+  .page-content {
+    .inner-content {
+      @include background-image($brand-gradient);
+      margin-top: -125px;
+      padding: 180px 0 50px;
+    }
+  }
+
+  .contact-big {
+    @include outer-container;
+    @include clearfix;
+    max-width: 50%;
+    padding: $vertical-margin 0;
+
+
+    li {
+      $border: 1px solid $blue;
+
+      @include span-columns(6);
+      margin: 0 auto;
+      overflow: auto;
+      padding: $vertical-margin * 4 0;
+      text-align:center;
+
+      &:nth-child(-n+2) {
+        border-bottom: $border;
+
+        @include media($medium-screen-down) {
+          border-bottom: 0;
+        }
+      }
+
+      &:nth-child(even) {
+        border-left: $border;
+
+        @include media($medium-screen-down) {
+          border-left: 0;
+        }
+      }
+
+      @include media($medium-screen-down) {
+        @include fill-parent;
+        padding: 10px;
+      }
+
+      i {
+        &:before {
+          font-size: 100px;
+
+          @include media($medium-screen-down) {
+            font-size: 65px;
+          }
+        }
+      }
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: saturate($email-color, 50%);
+      }
+
+      p {
+        color: $white;
+        font-size: 14px;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -6,7 +6,6 @@ header.main {
   background-color: white;
 
   .inner-content {
-    padding-top: em(90);
     margin-top: em(95);
     margin-bottom: 0;
     background-color: white;
@@ -36,11 +35,16 @@ section {
 
   &.project-introduction {
     @include outer-container;
+    width: 90%;
+
+    h1 {
+      padding-bottom: .25em;
+    }
 
     .project-introduction-calltoaction {
       background-color: inherit;
-      margin-top: $vertical-padding*3;
-      padding-bottom: $vertical-padding/2;
+      margin-top: $vertical-padding*2;
+      padding-bottom: $vertical-padding/3;
 
       p {
         font-size: em(14);
@@ -58,33 +62,86 @@ section {
     background-color: #003D61;
     padding-top: $vertical-padding;
 
+    img {
+      &:last-of-type {
+        padding-bottom: $vertical-padding;
+      }
+    }
+
     footer {
       background-color: $neutral;
       font-size: em(14);
+      overflow: auto;
       padding: $vertical-padding 0;
-      padding-bottom: em(70);
 
-      .prev-project-target {
+      a {
+        @include media($medium-screen-down) {
+          font-size: 16px;
+        }
+      }
+
+      a.prev-project-target {
         @include span-columns(4);
         color: $email-color;
+
+        @include media($medium-screen-down) {
+          @include fill-parent;
+          min-height: 2em;
+        }
+
+        &:after {
+          content: " →";
+        }
+
+        &:hover {
+          color: shade($email-color, 30%);
+        }
+
+        &.last {
+          &:after {
+            content: " ";
+            display: inline-block;
+          }
+        }
+      }
+
+      a.next-project-target {
+        @include span-columns(4);
+        color: $headings;
+
+        @include media($medium-screen-down) {
+          @include fill-parent;
+          min-height: 2em;
+        }
 
         &:before {
           content: "← ";
         }
-      }
 
-      .next-project-target {
-        @include span-columns(4);
-        color: $headings;
+        &:hover {
+          color: shade($headings, 30%);
+        }
 
-        &:after {
-          content: " →"
+        &.first {
+          &:before {
+            content: " ";
+            display: inline-block;
+          }
         }
       }
 
-      .home-target {
+      a.home-target {
         @include span-columns(4);
         color: $orange;
+
+        @include media($medium-screen-down) {
+          @include fill-parent;
+          min-height: 2em;
+        }
+
+        &:hover {
+          color: shade($orange, 30%);
+        }
       }
     }
   }

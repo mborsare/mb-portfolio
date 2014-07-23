@@ -14,8 +14,6 @@ layout: default
     <img src="http://placehold.it/1000x650" alt="">
     <img src="http://placehold.it/1000x650" alt="">
     <footer>
-      <a href="{{page.previous.url}}" title="{{page.previous.title}}" class="prev-project-target">Previous Project Placeholder</a>
-      <a href="/" class="home-target">Back to work</a>
-      <a href="{{page.next.url}}" title="{{page.next.title}}" class="next-project-target">Next Project Placeholder</a>
+      {% include _project-footer.html %}
     </footer>
   </section>

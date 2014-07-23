@@ -1,0 +1,13 @@
+{% if page.next.url and page.next.title != 'Wax Snowboards' and published !="false" %}
+    <a href="{{page.next.url}}" title="{{page.next.title}}" class="next-project-target"> {{page.next.title}} </a>
+{% else %}
+    <a href="/work/10BreweriesApp" title="10 Breweries App" class="next-project-target">10 Breweries App</a>
+{% endif %}
+
+<a href="/" class="home-target">Back to work</a>
+
+{% if page.previous.url and page.previous.title != '10 Breweries App' and published !="false" %}
+     <a href="{{page.previous.url}}" title="{{page.previous.title}}" class="prev-project-target"> {{page.previous.title}} </a>
+{% else %}
+    <a href="/work/WaxSnowboards" title="Wax Snowboards is the raddest" class="prev-project-target">Wax Snowboards</a>
+{% endif %}

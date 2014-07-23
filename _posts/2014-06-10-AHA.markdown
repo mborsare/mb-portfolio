@@ -3,7 +3,7 @@ layout: project
 title:  "American Heart Association"
 date:   2014-06-10 16:25:11
 categories: [Branding, Print]
-thumbnail: /assets/images/AHA.jpg
+thumbnail: /assets/images/thumbs/AHA.jpg
 ---
 
 This annual report and branding for the American Heart Association addresses their mission to mitigate and prevent heart disease in America. Its design appeals to a younger audience because heart disease is a life-long concern that shouldn’t merely be addressed later in life. The concept emphasizes the massive physical strength of one’s heart expressed through spectacularly true statistics. These are juxtaposed with strongmen (and women) to give the annual a tongue-in-cheek feel.

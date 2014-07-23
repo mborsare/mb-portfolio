@@ -3,7 +3,7 @@ layout: project
 title:  "Corvias Group"
 date:   2014-06-20 16:25:11
 categories: [Branding, Interactive]
-thumbnail: /assets/images/Corvias.jpg
+thumbnail: /assets/images/thumbs/Corvias.jpg
 ---
 
 <ul class="project-roles">
