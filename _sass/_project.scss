@@ -6,7 +6,6 @@ header.main {
   background-color: white;
 
   .inner-content {
-    padding-top: em(90);
     margin-top: em(95);
     margin-bottom: 0;
     background-color: white;
@@ -36,11 +35,16 @@ section {
 
   &.project-introduction {
     @include outer-container;
+    width: 90%;
+
+    h1 {
+      padding-bottom: .25em;
+    }
 
     .project-introduction-calltoaction {
       background-color: inherit;
-      margin-top: $vertical-padding*3;
-      padding-bottom: $vertical-padding/2;
+      margin-top: $vertical-padding*2;
+      padding-bottom: $vertical-padding/3;
 
       p {
         font-size: em(14);
@@ -57,6 +61,12 @@ section {
   &.project-images {
     background-color: #003D61;
     padding-top: $vertical-padding;
+
+    img {
+      &:last-of-type {
+        padding-bottom: $vertical-padding;
+      }
+    }
 
     footer {
       background-color: $neutral;

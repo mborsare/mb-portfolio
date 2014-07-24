@@ -6,6 +6,7 @@ footer {
 
 .main-footer-inner {
   @include outer-container;
+
   background-color: $white;
   margin-top: $vertical-margin;
   padding-bottom: $vertical-margin*4;
@@ -23,22 +24,37 @@ footer {
 
     &.copyright {
       font-size: em(14);
+      display: block;
       margin-top: em(100);
     }
+  }
+
+  @include media($xlarge-screen-down) {
+    @include pad($medium-screen-down-padding);
+    margin-top: 2em;
   }
 }
 
 .colophon {
   @include span-columns (9);
+
+    @include media($medium-screen-down) {
+    margin-top: 1.5em;
+  }
 }
 
 .contact {
   @include span-columns (3);
-  @include omega ();
+  @include omega();
+  float: right;
 
   a {
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+      border-bottom: 1px solid;
+    }
   }
 
   i {
@@ -57,5 +73,11 @@ footer {
         }
       }
     }
+  }
+}
+
+.colophon, .contact {
+    @include media($medium-screen-down) {
+    @include fill-parent;
   }
 }

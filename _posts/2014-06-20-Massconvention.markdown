@@ -3,7 +3,7 @@ layout: project
 title:  "Massconvention.com"
 date:   2014-06-20 16:25:11
 categories: [Branding, Interactive, Process, UI, UX]
-thumbnail: /assets/images/Massconvention.jpg
+thumbnail: /assets/images/thumbs/Massconvention.jpg
 ---
 
 <ul class="project-roles">

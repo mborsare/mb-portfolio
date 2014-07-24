@@ -3,7 +3,7 @@ layout: project
 title:  "Marls"
 date:   2014-06-10 16:25:11
 categories: [Branding, Video]
-thumbnail: /assets/images/Marls.jpg
+thumbnail: /assets/images/thumbs/Marls.jpg
 ---
 
 The best dog on the planet has yet to be discovered. I decided to right that wrong with a short video primer.
