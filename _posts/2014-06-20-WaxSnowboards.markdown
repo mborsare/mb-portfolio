@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-first
 title:  "Wax Snowboards"
 date:   2014-06-20 16:25:11
 categories: [Branding, Interactive, UI, UX]

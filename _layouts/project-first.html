@@ -6,7 +6,9 @@ layout: default
   <section class="project-introduction">
     <h1> {{ page.title }} </h1>
     {{ content }}
-  <div class ="project-introduction-calltoaction"><p>Scroll down (please).</p></div>
+  <div class ="project-introduction-calltoaction">
+    <p>Scroll down (please).</p>
+  </div>
   </section>
   <section class="project-images">
     <img src="http://placehold.it/1000x650" alt="">
@@ -14,7 +16,7 @@ layout: default
     <img src="http://placehold.it/1000x650" alt="">
     <img src="http://placehold.it/1000x650" alt="">
     <footer>
-      <a href="{{page.next.url}}" title="{{page.next.title}}" class="next-project-target"> {{page.next.title}} </a>
+      <a href="{{page.next.url}}" title="{{page.next.title}}" class="next-project-target first"> {{page.next.title}} </a>
       <a href="/" class="home-target">Back to work</a>
       <a href="{{page.previous.url}}" title="{{page.previous.title}}" class="prev-project-target"> {{page.previous.title}} </a>
     </footer>

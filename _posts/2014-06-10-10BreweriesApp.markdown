@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-last
 title:  "10 Breweries App"
 date:   2014-06-10 16:25:11
 categories: [Branding, Interactive, UI, UX]

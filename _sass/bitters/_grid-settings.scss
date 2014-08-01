@@ -17,16 +17,3 @@ $small-screen-down: new-breakpoint(max-width $small-screen);
 $medium-screen-down: new-breakpoint(max-width $medium-screen);
 $large-screen-down: new-breakpoint(max-width $large-screen);
 $xlarge-screen-down: new-breakpoint(max-width $xlarge-screen);
-
-/*
-$small-screen: 400px;
-$medium-screen: 640px;
-$large-screen: 860px;
-$xlarge-screen: 1080px;
-
-$small-screen-down: new-breakpoint(min-width 0px max-width 400px);
-$medium-screen-down: new-breakpoint(min-width 401px max-width 639px);
-$large-screen-down: new-breakpoint(min-width 640px max-width 1079px);
-$xlarge-screen-down: new-breakpoint(min-width 1080px max-width 2000px);
-*/
-
