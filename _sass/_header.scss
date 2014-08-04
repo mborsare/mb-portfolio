@@ -21,7 +21,7 @@ header {
   }
 
   .logo {
-    @include span-columns (9);
+    @include span-columns(9);
 
     @include media($medium-screen-down) {
       @include span-columns(3);
