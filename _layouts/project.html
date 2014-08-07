@@ -5,14 +5,11 @@ layout: default
 <body class="project">
   <section class="project-introduction">
     <h1> {{ page.title }} </h1>
-    {{ content }}
+    <p> {{ page.summary }} </p>
   <div class ="project-introduction-calltoaction"><p>Scroll down (please).</p></div>
   </section>
   <section class="project-images">
-    <img src="http://placehold.it/1000x650" alt="">
-    <img src="http://placehold.it/1000x650" alt="">
-    <img src="http://placehold.it/1000x650" alt="">
-    <img src="http://placehold.it/1000x650" alt="">
+    {{ content }}
     <footer>
       {% include _project-footer.html %}
     </footer>

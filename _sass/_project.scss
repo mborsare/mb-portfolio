@@ -30,7 +30,7 @@ section {
   }
 
   p {
-    font-size: $base-font-size*1.4;
+    font-size: $base-font-size*1.2;
   }
 
   &.project-introduction {
@@ -60,11 +60,14 @@ section {
 
   &.project-images {
     background-color: #003D61;
-    padding-top: $vertical-padding;
+    //padding-top: $vertical-padding;
 
     img {
+      display: block;
+      width: 100%;
+
       &:last-of-type {
-        padding-bottom: $vertical-padding;
+        //padding-bottom: $vertical-padding;
       }
     }
 
