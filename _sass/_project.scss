@@ -6,21 +6,25 @@ header.main {
   background-color: white;
 
   .inner-content {
-    margin-top: em(95);
-    margin-bottom: 0;
     background-color: white;
+    margin-bottom: 0;
+    margin-top: em(95);
   }
 }
 
 section {
   .project-roles {
-    font-size: em(14);
     display: inline-block;
-    margin-top: $vertical-padding/3;
+    font-size: em(14);
     margin-bottom: $vertical-padding;
+    margin-top: $vertical-padding/3;
 
     strong {
       color: $orange;
+
+      &:after {
+        content: ": ";
+      }
     }
 
     li {
@@ -30,7 +34,7 @@ section {
   }
 
   p {
-    font-size: $base-font-size*1.2;
+    font-size: $project-intro-font-size;
   }
 
   &.project-introduction {
@@ -47,28 +51,23 @@ section {
       padding-bottom: $vertical-padding/3;
 
       p {
-        font-size: em(14);
         color: $headings;
+        font-size: em(14);
       }
 
       &:after {
-        content: "↓";
         color: $headings;
+        content: "↓";
       }
     }
   }
 
   &.project-images {
-    background-color: #003D61;
-    //padding-top: $vertical-padding;
+    background-color: $white;
 
     img {
       display: block;
       width: 100%;
-
-      &:last-of-type {
-        //padding-bottom: $vertical-padding;
-      }
     }
 
     footer {
