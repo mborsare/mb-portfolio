@@ -5,7 +5,11 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/" title="Work">Work</a></li>
+      {% if page.layout == "home" %}
+        <li><a href="#work" title="Work">Work</a></li>
+      {% else %}
+        <li><a href="/#work" title="Work">Work</a></li>
+      {% endif %}
         <li><a href="/contact.html" title="Contact">Contact</a></li>
       </ul>
     </nav>
