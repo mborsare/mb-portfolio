@@ -1,28 +1,23 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-rendering: optimizeLegibility;
+html {
+  background-color: $white;
 }
 
-html, body {
-  height: 100%;
-  background-color: $white;
+html,
+body {
   color: $black;
 }
 
 body {
   font-family: $sans-serif;
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 1.5;
-  font-weight: 300;
 }
 
 .inner-content {
-  text-align: center;
   margin-bottom: $vertical-margin*5;
+  text-align: center;
 }
 
 a {
-  transition: ease-in .2s;
+  transition: all ease-in .2s;
 }

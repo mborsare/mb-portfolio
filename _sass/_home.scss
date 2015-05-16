@@ -1,16 +1,13 @@
 .home {
-
   header {
     &.main {
+      @include position(absolute, 0 null null 0);
       background: none;
-      position: absolute;
-      top: 0;
-      left: 0;
     }
   }
 
   .inner-content {
-    @include pad($vertical-padding default 0 default);
+    @include pad($vertical-padding null 0 null);
     background-color: $neutral;
     margin: 0;
   }
@@ -62,14 +59,13 @@
     }
 
     .post-details {
-      font-size: em(16);
+      @include position(absolute, 0 null null null);
       color: $white;
-      opacity: 0;
-      transition: opacity .2s ease;
-      top: 0;
-      padding-top: 45%;
-      position: absolute;
+      font-size: $base-font-size;
       height: 100%;
+      opacity: 0;
+      padding-top: 45%;
+      transition: opacity .2s ease;
       width: 100%;
 
       @include media($medium-screen-down) {

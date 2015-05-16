@@ -9,11 +9,13 @@
 
 // Mixins
 @import 'mixins/flash';
+@import 'mixins/gradient-animation';
 
 // Extends
 @import 'extends/button';
 @import 'extends/clearfix';
 @import 'extends/hide-text';
+@import 'extends/text-shadow';
 
 // Typography and Elements
 @import 'typography';

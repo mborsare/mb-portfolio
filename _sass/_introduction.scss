@@ -1,8 +1,7 @@
 .home-intro {
+  @include gradient-animate(90deg, 15s, (#9fdf4b, #69aeb3, #428af4, #2164a0));
+  @include padding(($vertical-margin * 6) null $vertical-margin);
   color: $yellow;
-  width: 100%;
-  padding-bottom: $vertical-margin;
-  padding-top: $vertical-margin*6;
   text-align: center;
 
   h1 {
@@ -53,6 +52,7 @@
 }
 
 .home-intro-inner {
+  @extend %text-shadow;
   @include outer-container;
   width: 60%;
 }

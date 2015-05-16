@@ -1,11 +1,9 @@
 footer {
   background-color: $white;
-  max-width: 100%;
 }
 
 .main-footer-inner {
   @include outer-container;
-  background-color: $white;
   margin-top: $vertical-margin;
   padding-bottom: $vertical-margin*4;
   padding-top: $vertical-padding;
@@ -21,8 +19,8 @@ footer {
     color: $slate;
 
     &.copyright {
-      font-size: em(14);
       display: block;
+      font-size: em(14);
       margin-top: em(100);
     }
   }
@@ -59,7 +57,6 @@ footer {
   }
 
   ul {
-    list-style-type: none;
     line-height: em(32);
 
     li {

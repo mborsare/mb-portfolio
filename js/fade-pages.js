@@ -1,15 +1,19 @@
-var speed = 'medium'; //slow, medium, fast
+// onextrapixel.com/2010/02/23/how-to-use-jquery-to-make-slick-page-transitions/
 
-$('html, body').hide();
 $(document).ready(function() {
-    $('html, body').fadeIn(speed, function() {
-        $('a[href], button[href]').click(function(event) {
-            var url = $(this).attr('href');
-            if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
-            event.preventDefault();
-            $('html, body').fadeOut(speed, function() {
-                window.location = url;
-            });
-        });
-    });
+
+  $("body").css("display", "none");
+
+  $("body").fadeIn(1000);
+
+  $("a").click(function(event){
+    event.preventDefault();
+    linkLocation = this.href;
+    $("body").fadeOut(250, redirectPage);
+  });
+
+  function redirectPage() {
+    window.location = linkLocation;
+  }
+
 });
