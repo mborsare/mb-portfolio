@@ -2,6 +2,33 @@ header.main {
   @include background-image(linear-gradient(-118deg, #2377AE 6%, #53A0FD 51%, #8DCE96 80%, #B4EC51 100%));
 }
 
+.project-introduction {
+  @include outer-container;
+  text-align: left;
+  // max-width: em(760);
+  padding: $base-spacing;
+
+  h1 {
+    padding-bottom: .25em;
+  }
+
+  .project-introduction-calltoaction {
+    background-color: inherit;
+    margin-top: $vertical-padding*2;
+    padding-bottom: $vertical-padding/3;
+
+    p {
+      color: $headings;
+      font-size: em(14);
+    }
+
+    &:after {
+      color: $headings;
+      content: "↓";
+    }
+  }
+}
+
 .page-content {
   background-color: white;
 
@@ -37,32 +64,6 @@ section {
     font-size: $project-intro-font-size;
   }
 
-  &.project-introduction {
-    @include outer-container;
-    width: 90%;
-
-    h1 {
-      padding-bottom: .25em;
-    }
-
-    .project-introduction-calltoaction {
-      background-color: inherit;
-      margin-top: $vertical-padding*2;
-      padding-bottom: $vertical-padding/3;
-
-      p {
-        color: $headings;
-        font-size: em(14);
-      }
-
-      &:after {
-        color: $headings;
-        content: "↓";
-      }
-    }
-  }
-
-  &.project-images {
     background-color: $white;
 
     img {
@@ -152,5 +153,4 @@ section {
         }
       }
     }
-  }
 }

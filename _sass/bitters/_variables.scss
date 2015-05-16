@@ -13,6 +13,7 @@ $base-border-radius: em(3);
 $project-intro-font-size: $base-font-size*1.2;
 
 //Spacing
+$base-spacing: $base-font-size * 2;
 $vertical-margin: em(24);
 $vertical-padding: $vertical-margin*2;
 $medium-screen-down-padding: (0 default 0 default);
