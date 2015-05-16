@@ -35,7 +35,7 @@ section {
 
   &.project-introduction {
     @include outer-container;
-    @include shift(.5);
+    @include shift(1.25);
     @include span-columns(10);
     text-align: left;
 
