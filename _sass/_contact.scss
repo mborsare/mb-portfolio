@@ -33,7 +33,7 @@
 
   .page-content {
     .inner-content {
-      @include background-image($brand-gradient);
+      @extend %gradient-animate;
       margin-top: -125px;
       padding: 180px 0 50px;
     }

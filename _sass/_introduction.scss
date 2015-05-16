@@ -1,5 +1,5 @@
 .home-intro {
-  @include gradient-animate(90deg, 15s, (#9fdf4b, #69aeb3, #428af4, #2164a0));
+  @extend %gradient-animate;
   @include padding(($vertical-margin * 6) null $vertical-margin);
   color: $yellow;
   text-align: center;

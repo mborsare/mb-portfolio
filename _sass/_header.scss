@@ -1,13 +1,7 @@
 header {
-  width: 100%;
-  @include background-image($brand-gradient);
+  @extend %gradient-animate;
   padding-bottom: $vertical-margin/4;
-}
-
-.project {
-  header.main {
-    @extend header;
-  }
+  width: 100%;
 }
 
 .main-header-inner {
