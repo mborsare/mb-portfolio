@@ -35,7 +35,15 @@ section {
 
   &.project-introduction {
     @include outer-container;
-    width: 90%;
+    @include shift(1);
+    @include span-columns(10);
+    text-align: left;
+
+    @include media($medium-screen-up) {
+      @include shift(2);
+      @include span-columns(8);
+      text-align: center;
+    }
 
     h1 {
       padding-bottom: .25em;
